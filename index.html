@@ -7,26 +7,42 @@
 
 body{
 font-family:Arial;
-background:#111;
+background:#0f1115;
 color:white;
 text-align:center;
+margin:0;
+}
+
+.header{
+background:#000;
+padding:20px;
+font-size:30px;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+.container{
+width:500px;
+margin:auto;
+margin-top:40px;
 }
 
 .product{
-background:#1c1c1c;
-width:400px;
-margin:auto;
-padding:20px;
+background:#1c1f26;
+padding:25px;
 border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.5);
 }
 
 .product img{
 width:100%;
+border-radius:6px;
 }
 
 .price{
+font-size:28px;
 color:#00ff9d;
-font-size:24px;
+font-weight:bold;
 }
 
 .oldprice{
@@ -34,49 +50,84 @@ text-decoration:line-through;
 color:gray;
 }
 
+.stock{
+color:orange;
+font-weight:bold;
+}
+
+.review{
+color:gold;
+font-size:18px;
+}
+
 button{
 background:red;
 color:white;
-padding:10px 20px;
+padding:14px 30px;
 border:none;
-border-radius:5px;
+border-radius:6px;
+font-size:16px;
 cursor:pointer;
+margin-top:15px;
+}
+
+button:hover{
+background:#c40000;
+}
+
+ul{
+text-align:left;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<h1>Tier 1 Operator Supply</h1>
+<div class="header">
+TIER 1 OPERATOR SUPPLY CO.
+</div>
+
+<div class="container">
 
 <div class="product">
 
 <h2>Federal Champion FMJ 9mm Luger 115‑Grain – 500 Rounds</h2>
+
+<p class="review">★★★★★ (247 Reviews)</p>
 
 <img src="ammo.jpg">
 
 <p class="oldprice">$219.99</p>
 <p class="price">$19.99</p>
 
+<p class="stock">⚠ Only 7 left in stock</p>
+
+<p style="color:orange;">🔥 3 people are viewing this item right now</p>
+
+<p style="color:#00ff9d;">✓ Free Shipping on Orders Over $50</p>
+
 <p><b>SKU:</b> 135232431</p>
 <p><b>ITEM:</b> C9115A500</p>
 
-<p>Boost performance during target practice with Federal Champion FMJ 9 mm Luger 115‑Grain pistol ammunition. The full metal jacket delivers consistent feeding and reliable performance, while the bulk 500‑round package is ideal for extended range sessions.</p>
+<p>
+Boost performance during target practice with Federal Champion FMJ 9 mm Luger 115‑Grain pistol ammunition. The full metal jacket delivers consistent feeding and reliable performance, while the bulk 500‑round package is ideal for extended range sessions.
+</p>
 
 <h3>Features & Benefits</h3>
 
-<ul style="text-align:left">
+<ul>
 <li>9mm Luger</li>
 <li>115 grain weight</li>
-<li>500‑round box</li>
+<li>500 round box</li>
 <li>Full metal jacket for reliable feeding</li>
 <li>Designed for consistent performance during target practice</li>
 </ul>
 
 <h3>Specifications</h3>
 
-<ul style="text-align:left">
+<ul>
 <li>Ammo Type: Centerfire</li>
 <li>Number of Rounds: 500</li>
 <li>Grain Weight: 115</li>
@@ -84,12 +135,13 @@ cursor:pointer;
 <li>Caliber: 9mm Luger</li>
 </ul>
 
-<p>⚠ Only 7 left in stock</p>
-
 <button onclick="location.href='cart.html'">
-Add To Cart
+ADD TO CART
 </button>
 
 </div>
+
+</div>
+
 </body>
 </html>
